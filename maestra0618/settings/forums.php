@@ -16,8 +16,8 @@
   $PHORUM['ActiveForums']='1';
   $PHORUM['TimezoneOffset']='0';
 
-  $PHORUM['forum_url']='http://freshsource.unixathome.org/phorum';
-  $PHORUM['admin_url']='http://freshsource.unixathome.org/phorum/maestra0618/index.php';
+  $PHORUM['forum_url']='http://' . $_SERVER["HTTP_HOST"] . '/phorum';
+  $PHORUM['admin_url']='http://' . $_SERVER["HTTP_HOST"] . '/phorum/maestra0618/index.php';
 
   $PHORUM['AllowAttachments']='0';
   $PHORUM['AttachmentDir']='';
@@ -40,11 +40,11 @@
   $PHORUM['default_body_vlink_color']='#330000';
   $PHORUM['default_body_alink_color']='#FF0000';
   $PHORUM['default_table_width']='100%';
-  $PHORUM['default_table_header_color']='#003366';
-  $PHORUM['default_table_header_font_color']='#FFFFFF';
-  $PHORUM['default_table_body_color_1']='#FFFFCC';
+  $PHORUM['default_table_header_color']='#FFCC33';
+  $PHORUM['default_table_header_font_color']='#000000';
+  $PHORUM['default_table_body_color_1']='#FFFFFF';
   $PHORUM['default_table_body_font_color_1']='#000000';
-  $PHORUM['default_table_body_color_2']='#CCCC99';
+  $PHORUM['default_table_body_color_2']='#FFFFFF';
   $PHORUM['default_table_body_font_color_2']='#000000';
   $PHORUM['default_nav_color']='#FFFFFF';
   $PHORUM['default_nav_font_color']='#000000';
