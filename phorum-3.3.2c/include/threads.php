@@ -61,7 +61,7 @@
       }
     }
     else{
-      $img="<img src=\"images/trans.gif\" border=0 width=1 height=21 align=\"middle\" alt="">";
+      $img="<img src=\"images/trans.gif\" border=0 width=1 height=21 align=\"middle\" alt=\"\">";
       $loc=0;
     }
 
