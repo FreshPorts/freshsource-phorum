@@ -110,7 +110,7 @@
     if($ActiveForums>1){
       addnav($menu, $lForumList, "$forum_page.$ext?f=0$GetVars");
     }
-    addnav($menu, $lRegisterLink, "$signup_page.$ext?f=$f&target=$target$GetVars");
+    addnav($menu, $lRegisterLink, "$signup_page.$ext?f=$f&amp;target=$target$GetVars");
     $nav=getnav($menu);
 
   //////////////////////////
@@ -152,7 +152,7 @@
         </tr>
         <tr>
             <td <?php echo bgcolor($table_body_color_1); ?> nowrap="nowrap">&nbsp;</td>
-            <td <?php echo bgcolor($table_body_color_1); ?>><input type="submit" value="<?php echo $lLogin; ?>" />&nbsp;<br /><img src="images/trans.gif" width=3 height=3 border=0></td>
+            <td <?php echo bgcolor($table_body_color_1); ?>><input type="submit" value="<?php echo $lLogin; ?>" />&nbsp;<br /><img src="images/trans.gif" width=3 height=3 border=0 alt=""></td>
         </tr>
         </table>
     </td>

@@ -232,7 +232,7 @@
         </tr>
         <tr>
             <td <?php echo bgcolor($table_body_color_1); ?> nowrap="nowrap">&nbsp;</td>
-            <td <?php echo bgcolor($table_body_color_1); ?>><input type="submit" value="<?php echo $lRegister; ?>" />&nbsp;<br /><img src="images/trans.gif" width=3 height=3 border=0></td>
+            <td <?php echo bgcolor($table_body_color_1); ?>><input type="submit" value="<?php echo $lRegister; ?>" />&nbsp;<br /><img src="images/trans.gif" width=3 height=3 border=0 alt=""></td>
         </tr>
         </table>
         <?php echo $lRequiredFields; ?>

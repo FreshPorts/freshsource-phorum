@@ -7,8 +7,8 @@
   $c_gif="<img src=\"$forum_url/images/c.gif\" width=\"9\" height=\"21\" border=\"0\">";
   $i_gif="<img src=\"$forum_url/images/i.gif\" width=\"12\" height=\"21\" border=\"0\">";
   $n_gif="<img src=\"$forum_url/images/n.gif\" width=\"9\" height=\"21\" border=\"0\">";
-  $space_gif="<img src=\"$forum_url/images/trans.gif\" width=\"5\" height=\"21\" border=\"0\">";
-  $trans_gif="<img src=\"$forum_url/images/trans.gif\" width=\"12\" height=\"21\" border=\"0\">";
+  $space_gif="<img src=\"$forum_url/images/trans.gif\" width=\"5\" height=\"21\" border=\"0\" alt=\"\">";
+  $trans_gif="<img src=\"$forum_url/images/trans.gif\" width=\"12\" height=\"21\" border=\"0\" alt=\"\">";
 
   function echo_data($image, $topic, $row_color){
     global $ForumTableWidth,$ForumTableHeaderColor,$ForumTableHeaderFontColor;
@@ -191,7 +191,7 @@
 ?>
 <table class="PhorumListTable" width="<?php echo $ForumTableWidth;?>" cellspacing="0" cellpadding="0" border="0">
 <tr>
-    <td class="PhorumListHeader"<?php echo bgcolor($ForumTableHeaderColor);?>><font color="<?php echo $ForumTableHeaderFontColor; ?>">&nbsp;<?php echo $lTopics;?><img src="images/trans.gif" border="0" width=1 height=24 align="absmiddle"></font></td>
+    <td class="PhorumListHeader"<?php echo bgcolor($ForumTableHeaderColor);?>><font color="<?php echo $ForumTableHeaderFontColor; ?>">&nbsp;<?php echo $lTopics;?><img src="images/trans.gif" border="0" width=1 height=24 align="middle" alt=""></font></td>
     <td class="PhorumListHeader"<?php echo bgcolor($ForumTableHeaderColor);?> nowrap="nowrap" width=150><font color="<?php echo $ForumTableHeaderFontColor; ?>"><?php echo $lAuthor;?>&nbsp;</font></td>
     <td class="PhorumListHeader"<?php echo bgcolor($ForumTableHeaderColor);?> nowrap="nowrap" width=150><font color="<?php echo $ForumTableHeaderFontColor; ?>"><?php echo $lDate;?></font></td>
 </tr>

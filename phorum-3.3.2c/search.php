@@ -163,7 +163,7 @@
     if($ForumSecurity){
       if(!empty($phorum_auth)){
         addnav($menu, $lLogOut, "login.$ext?logout=1$GetVars");
-        addnav($menu, $lMyProfile, "profile.$ext?f=$f&id=$phorum_user[id]$GetVars");
+        addnav($menu, $lMyProfile, "profile.$ext?f=$f&amp;id=$phorum_user[id]$GetVars");
       }
       else{
         addnav($menu, $lLogIn, "login.$ext?f=$f$GetVars");
@@ -307,7 +307,7 @@
         $text=chop(substr($text, 0, 200));
         $text=strip_tags($text);
         $text=str_replace(PHORUM_SIG_MARKER, "", $text);
-        $link="$read_page.$ext?f=$message[forum]&i=$message[id]&t=$message[thread]$GetVars";
+        $link="$read_page.$ext?f=$message[forum]&amp;i=$message[id]&amp;t=$message[thread]$GetVars";
         $subject=chop($message["subject"]);
         $author=chop($message["author"]);
         $datestamp=date_format($message["datestamp"]);
@@ -343,11 +343,11 @@
 
     if($totalFound>$count){
       $startvar=$count+1;
-      $morematch="<a href=\"$search_page.$ext?f=$num&search=".urlencode($search)."&globalsearch=$globalsearch&match=$match&date=$date&fldauthor=$fldauthor&fldsubject=$fldsubject&fldbody=$fldbody&start=$startvar$GetVars\"><FONT color=\"$ForumNavFontColor\">$lMoreMatches</font></a>";
+      $morematch="<a href=\"$search_page.$ext?f=$num&amp;search=".urlencode($search)."&amp;globalsearch=$globalsearch&amp;match=$match&amp;date=$date&amp;fldauthor=$fldauthor&amp;fldsubject=$fldsubject&amp;fldbody=$fldbody&amp;start=$startvar$GetVars\"><FONT color=\"$ForumNavFontColor\">$lMoreMatches</font></a>";
     }
     if($start!=1){
       $startvar=$start-$ForumDisplay;
-      $prevmatch="<a href=\"$search_page.$ext?f=$num&search=".urlencode($search)."&globalsearch=$globalsearch&match=$match&date=$date&fldauthor=$fldauthor&fldsubject=$fldsubject&fldbody=$fldbody&start=$startvar$GetVars\"><FONT color=\"$ForumNavFontColor\">$lPrevMatches</font></a>";
+      $prevmatch="<a href=\"$search_page.$ext?f=$num&amp;search=".urlencode($search)."&amp;globalsearch=$globalsearch&amp;match=$match&amp;date=$date&amp;fldauthor=$fldauthor&amp;fldsubject=$fldsubject&amp;fldbody=$fldbody&amp;start=$startvar$GetVars\"><FONT color=\"$ForumNavFontColor\">$lPrevMatches</font></a>";
     }
     if($prevmatch || $morematch){
       echo "<tr>\n  <td colspan=\"3\" $bgcolor>\n";
@@ -394,9 +394,7 @@
     <td><font color="<?php echo $ForumTableBodyFontColor2; ?>"><input type="checkbox" name="fldauthor" value="1" <?php if($fldauthor==1)  echo "checked"; ?> /> <?php echo $lAuthor; ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="fldsubject" value="1" <?php if($fldsubject==1)  echo "checked"; ?> /> <?php echo $lFormSubject; ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="fldbody" value="1" <?php if($fldbody==1)  echo "checked"; ?> /> <?php echo $lMessageBodies; ?>&nbsp;&nbsp;&nbsp;</font></td>
 </tr>
 </table>
-</font><br /></td>
-</td>
-</tr>
+<br /></td>
 </table>
 </form>
 <p>

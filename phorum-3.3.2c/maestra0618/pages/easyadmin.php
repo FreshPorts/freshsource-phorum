@@ -10,8 +10,8 @@
   $c_gif="<img src=\"$forum_url/images/c.gif\" width=9 height=21 border=0 />";
   $i_gif="<img src=\"$forum_url/images/i.gif\" width=12 height=21 border=0 />";
   $n_gif="<img src=\"$forum_url/images/n.gif\" width=9 height=21 border=0 />";
-  $space_gif="<img src=\"$forum_url/images/trans.gif\" width=5 height=21 border=0 />";
-  $trans_gif="<img src=\"$forum_url/images/trans.gif\" width=12 height=21 border=0 />";
+  $space_gif="<img src=\"$forum_url/images/trans.gif\" width=5 height=21 border=0 alt="" />";
+  $trans_gif="<img src=\"$forum_url/images/trans.gif\" width=12 height=21 border=0 alt="" />";
 
   $cutoff = 800; // See the faq.
 

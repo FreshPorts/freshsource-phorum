@@ -65,7 +65,7 @@
   $lNextTopic       = "Older Topic";
   $lSearchResults   = "Search Results";
   $lSearchTips      = "Search Tips";
-  $lTheSearchTips   = "AND is the default. That is, a search for <strong>dog</strong> and <strong>cat</strong> returns all messages that contain those words anywhere.<p>QUOTES (\") allow searches for phrases. That is, a search for <strong>\"dog cat\"</strong> returns all messages that contain that exact phrase, with space.<p>MINUS (-) eliminates words. That is, a seach for <strong>dog</strong> and <strong>-cat</strong> returns all messages that contain <strong>dog</strong> but not <strong>cat</strong>. You can MINUS a phrase in QUOTES, like <strong>dog -\"siamese cat\"</strong>.<p>The engine is not case-sensitive and searches the title, body, and author.";
+  $lTheSearchTips   = "AND is the default. That is, a search for <strong>dog</strong> and <strong>cat</strong> returns all messages that contain those words anywhere.<br><br>QUOTES (\") allow searches for phrases. That is, a search for <strong>\"dog cat\"</strong> returns all messages that contain that exact phrase, with space.<br><br>MINUS (-) eliminates words. That is, a seach for <strong>dog</strong> and <strong>-cat</strong> returns all messages that contain <strong>dog</strong> but not <strong>cat</strong>. You can MINUS a phrase in QUOTES, like <strong>dog -\"siamese cat\"</strong>.<br><br>The engine is not case-sensitive and searches the title, body, and author.";
   $lNoMatches       = "No matches found :(";
   $lMessageBodies   = "Message Bodies (slower)";
   $lMoreMatches     = "More Matches";
