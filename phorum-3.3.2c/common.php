@@ -5,7 +5,7 @@
   // These variables may be altered as needed:
 
   // location where settings are stored
-  $settings_dir="/usr/websites/beta.freshsource.org/phorum/maestra0618/settings";  // no ending slash
+  $settings_dir="/usr/websites/" . $_SERVER["HTTP_HOST"] . "/phorum/maestra0618/settings";  // no ending slash
 
   // If you have dynamic vars for GET and POST to pass on:
   // AddGetPostVars("dummy", $dummy);
